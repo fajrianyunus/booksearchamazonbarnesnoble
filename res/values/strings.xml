@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Book Search Amazon BarnesNoble</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_book_search_amazon_barnes_noble">BookSearchAmazonBarnesNoble</string>
+
+</resources>
