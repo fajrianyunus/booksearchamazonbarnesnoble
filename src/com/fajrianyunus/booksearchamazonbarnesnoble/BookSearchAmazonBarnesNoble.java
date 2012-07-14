@@ -34,7 +34,7 @@ public class BookSearchAmazonBarnesNoble extends Activity {
             	String isbnIssn = isbnIssnEditText.getText().toString();
             	
             	if (isbnIssn.matches("^\\s*$")) {
-            		Toast.makeText(BookSearchAmazonBarnesNoble.this, "Please enter ISBN or ISSN", Toast.LENGTH_SHORT).show();
+            		Toast.makeText(BookSearchAmazonBarnesNoble.this, "Please enter the ISBN or ISSN", Toast.LENGTH_SHORT).show();
             	} else {
             		String url = "http://www.amazon.com/gp/search/ref=sr_adv_b/?field-isbn="+isbnIssn.trim();
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW);
@@ -51,7 +51,7 @@ public class BookSearchAmazonBarnesNoble extends Activity {
             	String isbnIssn = isbnIssnEditText.getText().toString();
             	
             	if (isbnIssn.matches("^\\s*$")) {
-            		Toast.makeText(BookSearchAmazonBarnesNoble.this, "Please enter ISBN or ISSN", Toast.LENGTH_SHORT).show();
+            		Toast.makeText(BookSearchAmazonBarnesNoble.this, "Please enter the ISBN or ISSN", Toast.LENGTH_SHORT).show();
             	} else {
             		String url = "http://www.barnesandnoble.com/s?keyword="+isbnIssn.trim();
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW);
