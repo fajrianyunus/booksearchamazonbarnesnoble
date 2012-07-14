@@ -4,12 +4,51 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/enterIsbnHere"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/isbnIssnHere"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/isbnIssnTextfield"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterIsbnHere"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/searchButtonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/isbnIssnTextfield" >
+
+        <Button
+            android:id="@+id/amazonButton"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/searchAmazon" />
+
+        <Button
+            android:id="@+id/barnesnobleButton"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/searchBarnesnoble" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scanBarcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchButtonContainer"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/hello_world"
-        tools:context=".BookSearchAmazonBarnesNoble" />
+        android:text="@string/scanBarcode" />
 
 </RelativeLayout>

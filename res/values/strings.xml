@@ -4,5 +4,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_book_search_amazon_barnes_noble">BookSearchAmazonBarnesNoble</string>
-
+	<string name="isbnIssnHere">Enter your ISBN or ISSN here:</string>
+	<string name="searchAmazon">Search in Amazon</string>
+	<string name="searchBarnesnoble">Search in Barnes &amp; Noble</string>
+	<string name="scanBarcode">Scan Barcode</string>
+	
 </resources>
